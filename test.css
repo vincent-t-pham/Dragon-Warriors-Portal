@@ -1,0 +1,135 @@
+
+.e1_2 { 
+	overflow:hidden;
+}
+.e1_2 { 
+	background-color:rgba(220.00000208616257, 43.00000123679638, 36.00000165402889, 1);
+	width:1440px;
+	height:1024px;
+	position:absolute;
+}
+.e3_5 { 
+	width:244px;
+	height:134px;
+	position:absolute;
+	left:60px;
+	top:48px;
+}
+.e2_8 { 
+	color:rgba(0, 0, 0, 1);
+	width:235px;
+	height:41px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Dreadnoughtus;
+	text-align:left;
+	font-size:36px;
+	letter-spacing:25;
+}
+.e3_3 { 
+	color:rgba(220.00000208616257, 43.00000123679638, 36.00000165402889, 1);
+	width:244px;
+	height:94px;
+	position:absolute;
+	left:0px;
+	top:40px;
+	font-family:Dreadnoughtus;
+	text-align:left;
+	font-size:36px;
+	letter-spacing:0;
+}
+.e3_6 { 
+	transform: rotate(-90deg);
+	color:rgba(220.00000208616257, 43.00000123679638, 36.00000165402889, 1);
+	width:664px;
+	height:110px;
+	position:absolute;
+	left:60px;
+	top:877px;
+	font-family:Dreadnoughtus;
+	text-align:left;
+	font-size:96px;
+	letter-spacing:25;
+}
+.e3_7 { 
+	color:rgba(255, 255, 255, 1);
+	width:512px;
+	height:110px;
+	position:absolute;
+	left:228px;
+	top:213px;
+	font-family:Dreadnoughtus;
+	text-align:left;
+	font-size:96px;
+	letter-spacing:25;
+}
+.e3_8 { 
+	color:rgba(255, 255, 255, 1);
+	width:189px;
+	height:27px;
+	position:absolute;
+	left:1211px;
+	top:47px;
+	font-family:Dreadnoughtus;
+	text-align:left;
+	font-size:24px;
+	letter-spacing:25;
+}
+.e3_9 { 
+	color:rgba(255, 255, 255, 1);
+	width:1026px;
+	height:560px;
+	position:absolute;
+	left:228px;
+	top:332px;
+	text-align:left;
+	font-size:24px;
+	letter-spacing:0;
+}
+.e3_10 { 
+	background-color:rgba(220.00000208616257, 43.00000123679638, 36.00000165402889, 1);
+	width:16px;
+	height:539px;
+	position:absolute;
+	left:1342px;
+	top:338px;
+}
+.e3_10 { 
+	border:1px solid rgba(0, 0, 0, 1);
+}
+.e3_11 { 
+	background-color:rgba(220.00000208616257, 43.00000123679638, 36.00000165402889, 1);
+	width:18px;
+	height:18px;
+	position:absolute;
+	left:1341px;
+	top:323px;
+}
+.e3_11 { 
+	border:1px solid rgba(0, 0, 0, 1);
+}
+.e3_12 { 
+	transform: rotate(-180deg);
+	background-color:rgba(220.00000208616257, 43.00000123679638, 36.00000165402889, 1);
+	width:18px;
+	height:18px;
+	position:absolute;
+	left:1359px;
+	top:892px;
+}
+.e3_12 { 
+	border:1px solid rgba(0, 0, 0, 1);
+}
+.e3_40 { 
+	color:rgba(255, 255, 255, 1);
+	width:166px;
+	height:31px;
+	position:absolute;
+	left:1140px;
+	top:859px;
+	font-family:PT Sans;
+	text-align:left;
+	font-size:24px;
+	letter-spacing:0;
+}
