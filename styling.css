@@ -62,6 +62,61 @@
     letter-spacing: 9.5px;
 }
 
+.melfit:link {
+    font-family: 'dreadnought', sans-serif;
+    font-size: 24px;
+
+	color:rgba(255, 255, 255, 1);
+	height:27px;
+	position:absolute;
+	right: 14%;
+	top:53px;
+	text-align:left;
+    letter-spacing: 9.5px;
+	text-decoration: none;
+}
+
+.melfit:visited {
+    font-family: 'dreadnought', sans-serif;
+    font-size: 24px;
+
+	color:rgba(255, 255, 255, 1);
+	height:27px;
+	position:absolute;
+	right: 14%;
+	top:53px;
+	text-align:left;
+    letter-spacing: 9.5px;
+	text-decoration: none;
+}
+
+.melfit:hover {
+    font-family: 'dreadnought', sans-serif;
+    font-size: 24px;
+
+	color:rgba(255, 255, 255, 1);
+	height:27px;
+	position:absolute;
+	right: 14%;
+	top:53px;
+	text-align:left;
+    letter-spacing: 9.5px;
+}
+
+.melfit:active {
+    font-family: 'dreadnought', sans-serif;
+    font-size: 24px;
+
+	color:rgba(255, 255, 255, 1);
+	height:27px;
+	position:absolute;
+	right: 14%;
+	top:53px;
+	text-align:left;
+    letter-spacing: 9.5px;
+	text-decoration: none;
+}
+
 .main1{
 	position:absolute;
     left: 15%;
@@ -95,7 +150,7 @@
     /* right: 50px;
 	top: 0px; */
 
-    width: 200px;
+    width: 80%;
     /* height: px; */
 
     display: inline-block;
@@ -104,7 +159,7 @@
 }
 
 .box2 {
-	color: black;
+	color: white;
 	font-size: 24px;
 	font-family: 'Helvetica';
     display: inline-block;
@@ -124,6 +179,12 @@
     letter-spacing: 24px;
 
 }
+
+/* a:link {
+	color: white;
+	font-size: 24px;
+	font-family: 'Helvetica';
+} */
 
 /* #spreadsheet {
 	font-family: arial, sans-serif;

@@ -42,7 +42,7 @@
   function init() {
     Papa.parse(spreadsheetURL, {
       download: true,
-      header: false,
+      header: true,
       complete: showInfo
     })
   }
@@ -66,6 +66,7 @@
         } 
         else {
           $(".box2").append('<span style="color: white;">' + data[j][i] + '</span><br>')
+
         }
       }
     }
@@ -118,19 +119,23 @@
     <span class="dragontext">Dragon</span>
     <span class="warriortext">Warriors</span>
   </a>
-  <a class="melfit" href="melfit.html">melfit</a>
+  <span class="melfit">melfit</span>
   <span class="signin">Sign in</span>
 
   <div class="main1">
     <span class="dragonside">DRAGON</span>
     <div class="information">
-      <span class="tasks">Tasks</span>
+      <span class="tasks">melFit</span>
       <br><br>
       
       <span class="box2"> 
         <!-- <a style="color: white;" href="google.com">test</a><br> -->
       </span>
     </div>
+    <span class="box2"> 
+      <b>DW Metrics 2023------------------------------------------------'</b>
+      
+    </span>
   </div>
 
 
