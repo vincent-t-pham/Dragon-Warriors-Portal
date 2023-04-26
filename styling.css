@@ -95,30 +95,25 @@
     /* right: 50px;
 	top: 0px; */
 
-    width: 80%;
-    height: px;
+    width: 200px;
+    /* height: px; */
 
     display: inline-block;
     overflow-wrap: break-word;
-
-
 
 }
 
 .box2 {
-	color: white;
+	color: black;
 	font-size: 24px;
 	font-family: 'Helvetica';
     display: inline-block;
     overflow-wrap: break-word;
-	overflow-x: hidden;
-    overflow-y: auto;
-	max-height: 580px;
   }
 
 .tasks { 
     font-family:'dreadnought';
-
+	display: inline-block;
 	color:rgba(255, 255, 255, 1);
 	/* width:500px; */
     
@@ -129,3 +124,20 @@
     letter-spacing: 24px;
 
 }
+
+/* #spreadsheet {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+  }
+  
+#spreadsheet td, #spreadsheet th {
+border: 1px solid #dddddd;
+text-align: left;
+padding: 8px;
+}
+
+#spreadsheet tr:nth-child(even) {
+background-color: #dddddd;
+} */
+

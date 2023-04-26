@@ -3,60 +3,111 @@
 <head>
     <link rel="stylesheet" href="styling.css">
 </head>
-<body style="background-color: rgb(220,43,36);">
+<style>
+  table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 1200px;
+  table-layout: fixed;
+  }
+    
+  td{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 100px;
+  }
 
+  th{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 100px;
+  }
+
+  tr:nth-child(even) {
+  background-color: #dddddd;
+  }
+</style>
+
+<script type="text/javascript" src="  https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
+<script type="text/javascript">
+  var spreadsheetURL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQkz717HS61bQhHwDCIMhmxBqmsYqb95Dl83IbXzSzvYYh9MvN7rUkAsvJ0B-qTbL096kdJIEBWePD9/pub?output=csv';
+
+  function init() {
+    Papa.parse(spreadsheetURL, {
+      download: true,
+      header: true,
+      complete: showInfo
+    })
+  }
+
+  function showInfo(results) {
+    var data = results.data
+
+    // data comes through as a simple array since simpleSheet is turned on
+    // alert("Successfully processed " + data.length + " rowsy!")
+    // document.getElementById("sheet").innerHTML = "<strong>Foods:</strong> " + [ data[0].OCz, data[1].OCz, data[2].OCz ].join(", ");
+    $(".box2").append('<strong>DW Metrics 2023</strong><br>' +
+                      '<table>' +
+                      '<tr>' +
+                        '<th style="max-width:100px;">Names</th>' +
+                        '<th style="width:300px;">Division</th>' +
+                        '<th style="width:300px;">OC Times</th>' +
+                        '<th>Perg</th>' +
+                      '</tr>')
+
+    for(var i=0; i<data.length;i++){
+      $(".box2").append(
+      '<tr>' +
+        '<td style="max-width:300px;">' + data[i].Names + '</td>' + 
+        '<td style="width:300px;">' + data[i].Division + '</td>' + 
+        '<td style="width:300px;">' + data[i].OCtime + '</td>' + 
+        '<td style="width:300px;">' + data[i].Perg + '</td>' +
+      '</tr>' 
+      )
+    }
+    $(".box2").append('</table>')    
+
+    console.log(data);
+  }
+
+  window.addEventListener('DOMContentLoaded', init)
+
+</script>
+
+<body style="background-color: rgb(220,43,36);">
+  <p id="sheet"></p>
   <a class="home" href="login.html">
     <span class="dragontext">Dragon</span>
     <span class="warriortext">Warriors</span>
   </a>
   <span class="signin">Sign in</span>
-  
+
   <div class="main1">
     <span class="dragonside">DRAGON</span>
     <div class="information">
       <span class="tasks">Tasks</span>
       <br><br>
+
       <span class="box2"> 
-        DW Elite<br>
-        CCNC Registration (4/29) <br>
-        Time Trial Submission (4/29)<br>
-        Required Merch: Polo, Long Sleeve, Trucker Hat <br>
-        Practice RSVP (4/19)<br><br>
+        <b>'</b>
         
-        DW General<br>
-        Practice RSVP (4/18)<br>
-        Practice RSVP (4/20)<br>
-        BBQ Social (4/19)<br><br>
-        
-        DW General<br>
-        Practice RSVP (4/18)<br>
-        Practice RSVP (4/20)<br>
-        BBQ Social (4/19)<br><br>
-
-        DW General<br>
-        Practice RSVP (4/18)<br>
-        Practice RSVP (4/20)<br>
-        BBQ Social (4/19)<br><br>
-
-        DW General<br>
-        Practice RSVP (4/18)<br>
-        Practice RSVP (4/20)<br>
-        BBQ Social (4/19)<br><br>
-
-        DW General<br>
-        Practice RSVP (4/18)<br>
-        Practice RSVP (4/20)<br>
-        BBQ Social (4/19)<br><br>
-        
-        Resources<br>
-        Feedback Form<br>
-        Peak Performance Mindset Virtual Clinic (Mar 22) — Dr. Gregory Prudhomme will be speaking about 4 primary concepts that will help you focus your mindset about training, time<br>
-        Meeting ID: 843 7149 7008 Passcode: u24<br><br>
-
       </span>
     </div>
+    <span class="box2"> 
+      <b>DW Metrics 2023------------------------------------------------'</b>
+      
+    </span>
   </div>
 
 
 </body>
 </html>
+
+
